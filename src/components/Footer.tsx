@@ -19,8 +19,8 @@ const Footer = () => {
     'Artematica',
     'Logica System',
     'New Logica System',
-    'Forma Mentis',
-    'Sine Tempore'
+    'Forma Mentis'
+    
   ];
 
   const scrollToSection = (href: string) => {
