@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Image, Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,13 +40,21 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg flex items-center justify-center">
+          <img
+          src="https://i0.wp.com/habitatnaturale.com.br/wp-content/uploads/2022/08/Ativo-8.png?fit=2560%2C270&ssl=1"
+          alt="logo-habitatnaturale"
+          className='w-[195px] h-12 object-contain'/>
+          <img
+          src="https://i0.wp.com/habitatnaturale.com.br/wp-content/uploads/2022/08/Valcucine_logo_minoreuguale15-cm_BIANCO.png?fit=1130%2C178&ssl=1"
+          alt="logo-valcucine"
+          className='w-[125px] h-12 object-contain'/>
+            {/* <div className="w-12 h-12 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg flex items-center justify-center">
               <span className="text-xl font-bold text-amber-900">V</span>
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">Valcucine Brasil</h1>
               <p className="text-xs text-gray-600">by Habitat Naturale</p>
-            </div>
+            </div> */}
           </div>
 
           {/* Desktop Navigation */}
